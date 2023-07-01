@@ -1,0 +1,72 @@
+.seguros-bg {
+  background: var(--cor-11);
+  padding: 50px;
+}
+
+.seguro-conteudo {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.seguro-item {
+  background: var(--cor-12);
+  padding: 32px 32px 32px 60px;
+}
+
+.seguro-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.seguro-conteudo h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.seguro-conteudo span {
+  display: block;
+  text-align: right;
+}
+
+.seguro-item li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+.seguro-item li::before {
+  content: "";
+  width: 13px;
+  height: 9px;
+  left: -20px;
+  background-image: url(../../img/icones/lista.svg);
+  position: absolute;
+}
+
+.button-prata {
+  background: var(--cor-10);
+  color: var(--cor-2);
+  grid-column: 1/-1;
+  margin-top: 20px;
+}
+
+.button-ouro {
+  background: var(--cor-p1);
+  color: var(--cor-p5);
+  grid-column: 1/-1;
+  margin-top: 20px;
+}
+
+@media (max-width:700px){
+  .seguro-conteudo{
+    grid-template-columns: 1fr;
+  }
+}
