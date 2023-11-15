@@ -16,7 +16,7 @@
   margin-left: 20px;
 }
 
-.header-button {
+.header-nav {
   color: var(--cor-0);
   padding: 10px 0;
   position: relative;
@@ -37,11 +37,12 @@
   display: block;
   margin-top: 5px;
   background: var(--cor-0);
-  transition: 1s;
+  transition: 0.3s;
   position: absolute;
 }
 
-.header-button:hover:after {
+.header-nav:hover::after,
+.header-lista-conteudo a.ativo::after {
   width: 100%;
 }
 
@@ -56,9 +57,22 @@
   .header {
     flex-direction: column;
     gap: 20px;
+    padding: 20px;
   }
 
   .header img {
     margin: 0;
+  }
+
+  .header-lista-conteudo {
+    padding: 0;
+    gap: 10px;
+  }
+
+  .header-nav {
+    font-size: 0.9rem;
+    background: var(--cor-12);
+    padding: 10px;
+    border-radius: 4px;
   }
 }

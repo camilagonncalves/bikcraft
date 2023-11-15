@@ -49,5 +49,9 @@
   .parceiros li:nth-child(n + 3 ){
     border-top: 2px solid var(--cor-2);
   }
+
+ .parceiros {
+  padding: 30px 0px;
+ }
 }
 

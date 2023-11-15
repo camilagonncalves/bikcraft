@@ -1,12 +1,13 @@
 .seguros-bg {
   background: var(--cor-11);
-  padding: 50px;
 }
 
-.seguro-conteudo {
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
+#seguros .seguros{
+  padding-top: 0
+}
+
+.seguros{
+  padding: 60px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -23,14 +24,14 @@
   grid-template-columns: 1fr auto;
 }
 
-.seguro-conteudo h3 {
+.seguros h3 {
   font-size: 2rem;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.seguro-conteudo span {
-  display: block;
+.seguros span {
+  display: inline-block;
   text-align: right;
 }
 
@@ -56,17 +57,38 @@
   color: var(--cor-2);
   grid-column: 1/-1;
   margin-top: 20px;
+
 }
 
 .button-ouro {
-  background: var(--cor-p1);
-  color: var(--cor-p5);
   grid-column: 1/-1;
   margin-top: 20px;
 }
 
-@media (max-width:700px){
-  .seguro-conteudo{
+@media (max-width:700px) {
+  .seguros {
     grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .seguro-item ul {
+    font-size: 1rem;
+    grid-column: 1/-1;
+  }
+}
+
+
+@media (max-width:450px) {
+
+  .seguro-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .seguro-item {
+    padding: 30px;
+  }
+
+  .seguros-bg {
+    padding: 30px;
   }
 }
